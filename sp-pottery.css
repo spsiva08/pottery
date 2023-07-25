@@ -1,0 +1,702 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:cursive;
+}
+:root{
+    --button-blue:blue;
+    --button-red:red;
+    --font-white:white;
+    --text-shadow:2px 2px 10px yellow;
+    --big-head1:65px;
+    --big-head2:55px;
+    --big-head3:45px;
+    --big-head4:35px;
+    --mid-head1:45px;
+    --mid-head2:40px;
+    --mid-head3:35px;
+    --mid-head4:30px;
+    --bg-black: rgb(34, 33, 33);
+    --bg-white:rgb(238, 231, 231);
+
+}
+/* .overall{
+    margin-right: 10px;
+    box-shadow: 2px 2px 6px 2px black;
+} */
+
+/*------------------- 1st box ---------------------------------*/
+.box1{
+    width: 100%;
+    height: 100vh; 
+    /* border: 2px solid black; */
+    position: relative;
+    text-shadow: var(--text-shadow);
+}
+.video1{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+.box1 .nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:absolute;
+    top: 0px;
+    padding: 10px; 
+    margin-right: 15px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    position: fixed;
+    z-index: 999;
+}
+.nav1 img{
+   width: 70px;
+   height: 70px; 
+} 
+.nav .nav2{
+    display: flex;
+    gap: 10px;
+    font-size: 17px;
+    padding-right: 20px;
+}
+.nav2 p{
+    padding: 10px;
+}
+.nav2 p:hover{
+    cursor: pointer;
+    background-color: var(--button-red);
+}
+.nav2 a{
+    text-decoration: none;
+    color: var(--font-white);
+}
+.box1 .fa-bars{
+    color: white;
+    font-size: 25px;
+    display: none;
+    padding-right: 20px;
+}
+.nav .checkbox1{
+    display: none;
+}
+.welcome{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 30%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color:white;  
+    text-align: center;
+    padding: 10px; 
+    /* border:2px solid black; */
+}
+.welcome h1{
+    font-size: var(--big-head1);
+    padding-bottom: 30px;
+    word-spacing: 10PX;
+    text-shadow: 2px 2px 6px green; 
+}
+.welcome p{
+    font-weight: bold;
+    font-size: 25px;
+    padding-bottom:30px ;
+}
+
+/* -------------- 2nd box -------------------------- */
+
+.box2{
+    width:100%;
+    height: 250px;
+    background-color: var(--bg-black);
+    /* background-image: url(./imgs/pottery-img/black1.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    
+}
+.box2 h1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--big-head1);
+    color: var(--font-white);
+    text-shadow:var(--text-shadow);
+}
+
+/* -------------- 3rd box -------------------------- */
+
+.box3{
+    width: 100%;
+    background-color: var(--bg-white);
+    padding-bottom: 50px;
+    text-align: center;
+}
+.box3 h1{
+    padding: 50px 10px 40px 10px;
+    text-align: center;
+    text-shadow: var(--text-shadow);
+    font-size: var(--mid-head1)
+}
+.begin-card{
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding-bottom: 30px;
+}
+.begin-card .be-card0{
+    width: 300px;
+    height: 100%;
+
+}
+.top-c{
+
+    width: 100%;
+}
+.top-c img{
+    width: 100%;
+    object-fit: cover;
+    height: 205px;
+}
+
+.bottom-c {
+    width: 100%;
+    height: 50%;
+    background-color: var(--bg-black);
+    line-height: 25px;
+    text-align: center;
+    color: var(--font-white);
+    padding: 20px 15px;
+}
+.bottom-c h3{
+    padding:10px;
+}
+.bottom-c .para{
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: antiquewhite;
+}
+.bottom-c .para1{
+    padding-bottom: 15px;
+    color: antiquewhite;
+}
+.bottom-c button{
+    border: none;
+    padding: 10px 15px;
+    color: var(--font-white);
+    background-color: var(--button-blue);
+}
+.bottom-c button:hover{
+    cursor:pointer;
+    background-color: var(--button-red);
+    font-weight: bold;
+}
+
+/* -------------- 4th box -------------------------- */
+
+                    /* box3 style also apply box4 */
+
+/* -------------- 5th box -------------------------- */
+ 
+                    /* box2 style also apply box5  */
+
+/* -------------- 6th box -------------------------- */
+.box6{
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-white);
+    text-align: center;
+    padding: 10px 10px 30px 10px ;
+}
+.box6 h1{
+    text-align: center;
+    font-size: var(--mid-head1);
+    text-shadow: var(--text-shadow);
+    padding: 30px 15px 30px 15px;
+}
+.box6 .gallery{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+.gallery img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.box6 button{
+    border: none;
+    padding: 10px;
+    color: var(--font-white);
+    background-color: var(--button-blue);
+    transition: background-color 0.5s;
+}
+.box6 button:hover{
+    background-color: var(--button-red);
+    font-weight: bold;
+}
+.box6 a{
+    text-decoration: none;
+    color: var(--font-white);
+}
+
+/* -------------- 7th box -------------------------- */
+
+.box7{
+    width: 100%;
+    padding: 30px 20px;
+    background-color: var(--bg-black);
+    text-align: center;
+}
+.box7 h1{
+    color: var(--font-white);
+    text-shadow: var(--text-shadow);
+    font-size: var(--mid-head1);
+    padding:10px 15px 40px 15px;
+    text-align: center;
+}
+.sales{
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding-bottom: 30px;
+}
+.sales .item{
+    width: 300px;
+    height: 100%;
+}
+.item-top{
+    width: 100%;
+    height: 205px;
+}
+.item-top img{
+    width: 100%;
+    object-fit: cover;
+    height: 205px;
+}
+.item-bottom{
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-white);
+    line-height: 40px;
+    padding: 0px 25px 25px 15px ;
+}
+.item-bottom .head1{
+    font-size: 25px;
+}
+.item-bottom .head2{
+    color: green;
+    padding-bottom: 5px;
+}
+.buy{
+    display: flex;
+    justify-content: space-between;
+}
+.fa-cart-plus{
+    border: 2px solid blue;
+    padding: 10px;
+    color: green;
+}
+.fa-cart-plus:hover{
+    font-weight: bold;
+    border: 2px solid red;
+    box-shadow: 2px 2px 5px red;
+    color: blue;
+    cursor: pointer;
+}
+.item-bottom .name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name .fa-heart{
+    color: red;
+    font-size: 22px;
+}
+.item-bottom button{
+    background-color: var(--button-blue);
+    color: var(--font-white);
+    padding: 10px;
+    border: none;
+    transition: 0.5s;
+}
+.item-bottom button:hover{
+    font-weight: bold;
+    background-color: var(--button-red);
+    cursor: pointer;
+}
+.item-bottom .gold{
+    color: gold;
+}
+.item-bottom .fa-star{
+    font-size: 22px;
+}
+.box7>button{
+    border: none;
+    padding: 10px;
+    color: var(--font-white);
+    background-color: var(--button-blue);
+}
+.box7>button:hover{
+    background-color: var(--button-red);
+    font-weight: bold;
+    cursor: pointer;
+}
+.box7 a{
+    text-decoration: none;
+    color: var(--font-white);
+}
+/* ---------------- 8th box ----------------- */
+
+.box3 .workshop-button{
+    border: none;
+    padding: 10px;
+    color: var(--font-white);
+    background-color: var(--button-blue);
+}
+.box3 .workshop-button:hover{
+    background-color: var(--button-red);
+    font-weight: bold;
+    cursor: pointer;
+}
+/* ------------ 9th box ---------------------- */
+.box9{
+    width: 100%;
+    height: 100%;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+    
+}
+.photo{
+    /* border: 2px solid black; */
+    /* width: 70%; */
+    height: 500px;
+}
+.member{
+    /* border: 2px solid black; */
+    /* width: 30%; */
+    height: 500px;
+    background-color: var(--bg-black);
+    color: var(--font-white);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+    line-height: 30px;
+}
+.member h1,p{
+    padding-bottom: 30px;
+}
+.member h1{
+    text-shadow: var(--text-shadow);
+}
+.member button{
+    border: none;
+    padding: 10px;
+    color: var(--font-white);
+    background-color: var(--button-blue);
+}
+.member button:hover{
+    background-color: var(--button-red);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.photo img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+/* ----------- 10th box ------------------------- */
+
+.box10{
+    width: 100%;
+    padding: 50px 20px 50px 20px;
+    background-color: var(--bg-white);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.box10 h1{
+    text-align: center;
+    font-size: var(--mid-head1);
+    text-shadow: var(--text-shadow);
+    padding: 0px 10px 30px 10px;
+}
+.input-type{
+    width: 100%;
+    padding: 25px;
+    background-color: var(--bg-black);
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+.input-type:hover{
+    box-shadow: 2px 2px 8px red;
+    cursor: pointer;
+    font-weight: bold;
+}
+::placeholder{
+    color: var(--font-white);
+}
+.input-type1{
+    padding-bottom: 100px;
+}
+.info{
+    width: 1000px;
+    display: grid;
+    gap: 10px;
+}
+.name,.email,.msg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.submit{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.submit button{
+    padding: 10px;
+    color: var(--font-white);
+    background-color: blue;
+    border: none;
+}
+.submit button:hover{
+    font-weight: bold;
+    background-color: var(--button-red);
+    cursor: pointer;
+}
+/* ------------ 11th box ---------------------- */
+.box11{
+    width: 100%;
+    background-color: var(--bg-black);
+    padding: 50px 20px 50px 20px;
+    color: var(--font-white);
+}
+.div11{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.div11 h2{
+    padding-bottom: 20px ;
+} 
+.sm-icon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding:20px ;
+}
+.sm{
+    padding: 15px;
+    background-color: var(--button-blue);
+    color: var(--font-white);
+    border-radius: 50%;
+    font-size: 20px;
+}
+.sm:hover{
+    background-color: var(--button-red);
+    font-weight: bold;
+    border: 2px solid green;
+    cursor: pointer;
+    animation: shake 1s;
+}
+@keyframes shake{
+    10%{
+        transform: rotate(30deg);
+    }
+    20%{
+        transform: rotate(-30deg);
+    }
+    30%{
+        transform: rotate(30deg);
+    }
+    40%{
+        transform: rotate(-30deg);
+    }
+}
+.copyrights{
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    background-color: var(--bg-black);
+    color: rgb(153, 147, 147);
+}
+@media all and (min-width:300px) and (max-width:800px){
+    .box1 .nav{
+        background-color: black;
+    }
+   .box1 .nav2{
+        position: fixed;
+        left: -800px;
+        flex-direction: column; 
+        background-color:rgb(27, 26, 26);
+        text-align: center;
+        width: 50%;
+        height: 100vh; 
+        top: 90px;
+        padding-top: 50px;
+        transition: 0.9s;
+        /* z-index: 999; */
+    }
+    .box1 .fa-bars{
+        color: white;
+        display: block;
+    }
+    input:checked ~.nav2{
+        left:0px;
+    }
+    .welcome h1{
+        font-size: var(--big-head3) 
+    }
+    .welcome p{
+        font-size: 20px;
+    }
+/* ---------------- 2nd box --------------- */
+
+    .box2{
+        height: 200px;
+    }
+    .box2 h1{
+        font-size: var(--big-head3);
+        text-align: center;
+    }
+    /*---------------- 3rd box ----------------*/
+    .box3 h1{
+        font-size: var(--mid-head3);
+    }
+    /* --------------6th box ------------------ */
+    .box6 h1{
+        font-size: var(--mid-head3);
+    }
+    .box6 .gallery{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+/* ------------------- 7th box ---------------- */
+    .box7 h1{
+        font-size: var(--mid-head3);
+    }
+    /* ----------9th box --------------------- */
+    .box9{
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    } 
+    /* ----------- 10th box ------------------------- */
+    .info{
+        width: 100%;
+    } 
+    .box10 h1{
+        font-size: var(--mid-head3);
+    }
+    /* ------------ 11th box ---------------------- */
+    .div11{
+        flex-wrap: wrap;
+        justify-content: stretch;
+        gap: 20px;
+
+    }
+}
+@media all and (min-width:300px) and (max-width:500px){
+    .welcome h1{
+        font-size: var(--big-head4); 
+    }
+    .welcome p{
+        font-size: 18px;
+    }
+
+    /* -------------------------2nd box--------------- */
+
+    .box2{
+        height: 200px;
+    }
+    .box2 h1{
+        font-size: var(--big-head4);
+        text-align: center;
+    }
+    /* -------3rd box --------------------- */
+    .box3 h1{
+        font-size: var(--mid-head4);
+    }
+    /* -------6th box ---------------------- */
+    .box6 h1{
+        font-size: var(--mid-head4);
+    }
+    /* ------------------- 7th box ---------------- */
+    .box7 h1{
+        font-size: var(--mid-head4);
+    }
+    /* ----------- 10th box ------------------------- */
+    .info .name,.email{
+        flex-wrap: wrap;
+    }
+    .box10 h1{
+        font-size: var(--mid-head4);
+    }
+    /*------------------ copyrights--------- */
+    .copyrights{
+        font-size: 12px;
+        color: rgb(153, 147, 147);
+
+    }
+}
+@media all and (min-width:800px) and (max-width:1100px){
+    .welcome h1{
+        font-size: var(--big-head2);
+    }
+    .welcome p{
+        font-size: 22px;
+    }
+    /* -----------2nd box-------- */
+    .box2 h1{
+        font-size: var(--big-head2);
+    }
+    /* ---------3rd box --------- */
+    .box3 h1{
+        font-size: var(--mid-head2);
+    }
+    /* ---------6th box ------------ */
+    .box7 h1{
+        font-size: var(--mid-head2);
+    }
+    .box6 .gallery{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    /* ------------------- 7th box ---------------- */
+    .box7 h1{
+        font-size: var(--mid-head2);
+    }
+    /* --------------- 10th box ------------------ */
+
+    .box10 .info{
+        width: 790px;
+    }
+
+}
